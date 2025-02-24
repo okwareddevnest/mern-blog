@@ -36,7 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
   position: relative;
 }
@@ -44,36 +43,34 @@ body {
 .main-content {
   flex: 1;
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding-top: 4rem;
-}
-
-@media (min-width: 1200px) {
-  .main-content {
-    max-width: 1200px;
-    padding: 6rem 1rem 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    padding: 4rem 0 1rem;
-  }
+  margin: 0;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 /* Container utilities */
 .container {
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 0 2rem;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+  .main-content {
+    padding: 4rem 1rem 1rem 1rem;
+  }
+
   .container {
-    max-width: 1200px;
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 4rem 0.75rem 1rem 0.75rem;
+  }
+
+  .container {
+    padding: 0 0.75rem;
   }
 }
 

@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0;
   background: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -11,17 +11,14 @@
   right: 0;
   z-index: 1000;
   width: 100%;
-  max-width: 100%;
 }
 
 .navbar > .container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem 2rem;
 }
 
 .navbar-brand {
